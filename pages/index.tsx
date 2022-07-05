@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import ConnectButton from '../components/ConnectButton'
+import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Open tools accelerate progress.
         </p>
-
+        <NavBar />
         <ConnectButton />
       </main>
 
