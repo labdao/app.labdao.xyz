@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 const NavBar = () => {
     const router = useRouter();
     const pages = ['home', 'applications', 'jobs', 'my-jobs', 'my-tokens'];
-    const [activeIndex, setIndex] = useState(-1)
 
     return (
         <>
@@ -14,7 +13,7 @@ const NavBar = () => {
                 variant='soft-rounded' 
                 colorScheme='green'
                 // set defaultIndex to tab with id of current route
-                defaultIndex={pages.indexOf(router.pathname.split('/')[1])}
+                defaultIndex={pages.indexOf(router.pathname.split('/')[1])-1}
             >
                 <TabList>
                     <Tab>
@@ -23,8 +22,12 @@ const NavBar = () => {
                     <Tab>
                         <Link href='/jobs'>Jobs</Link>
                     </Tab>
-                    <Tab>My Jobs</Tab>
-                    <Tab>My Tokens</Tab>
+                    <Tab>
+                        <Link href='/my-jobs'>My Jobs</Link>
+                    </Tab>
+                    <Tab>
+                        <Link href='my-tokens'>My Tokens</Link>
+                    </Tab>
                 </TabList>
                 <TabPanels>
                 </TabPanels>
