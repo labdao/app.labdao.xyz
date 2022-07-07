@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          We'll let you know when it's ready!
+          We&apos;ll let you know when it&apos;s ready!
         </p>
       </main>
 
