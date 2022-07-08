@@ -1,0 +1,3 @@
+[submodule "openlab-cli"]
+	path = openlab-cli
+	url = git@github.com:labdao/openlab-cli.git
